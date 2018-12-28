@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>UIスレッド</title>
+        <script>
+            "use strict";
+            let a = 0;
+            setInterval(() => {
+                document.getElementById("count").textContent = "" + a;
+                a++;
+            }, 100);
+        </script>
+    </head>
+    <body>
+        <div><div id="count"></div></div>
+        <div>100000までに素数が何個あるかを出力する</div>
+        <div id="output"></div>
+        <button id="demo1">demo1</button>
+        <button id="demo2">demo2</button>
+        <script src="demo1.js"></script>
+        <script src="demo2.js"></script>
+    </body>
+</html>
